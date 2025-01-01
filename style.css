@@ -6,6 +6,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Prevent font size inflation */
@@ -73,4 +75,19 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+:root{
+    --clr-moderate-violet: hsl(263, 55%, 52%);
+    --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-light-grayish blue: hsl(210, 46%, 95%);
+}
+
+body{
+  display: flex;
+
 }
