@@ -88,12 +88,14 @@ textarea:not([rows]) {
 }
 
 body{
+  font-family: 'barlow semi condensed', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
   background: var(--clr-light-gray);
+  font-size: 10px;
 }
 
 .daniel, .jonathan, .patrick{
@@ -115,6 +117,10 @@ opacity: 0.7;
   "daniel daniel jonathan kira"
   "jeanette patrick patrick kira";
   gap: 20px;
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+
 }
 
 
@@ -143,7 +149,20 @@ opacity: 0.7;
   background: var(--clr-very-dark-blackish-blue);
 }
 
+.card{
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 30px;
+}
+
 .card-header{
-  display: grid;
-  grid-template-areas: ;
+  display: flex;
+  align-items: center;
+}
+.card-header img{
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.profil{
+  margin: 20px;
 }
