@@ -188,12 +188,12 @@ h1{
 @media (max-width: 940px){
   .card-container{
     grid-template-areas: 
-    "daniel daniel jonathan"
-    "jeanette patrick patrick"
-    "kira kira kira";
+    "daniel jonathan"
+    "jeanette patrick"
+    "kira kira";
   }
 }
-@media (max-width: 550px){
+@media (max-width: 400px){
   .card-container{
     grid-template-areas: 
     "daniel"
