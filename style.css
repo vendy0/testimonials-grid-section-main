@@ -84,10 +84,66 @@ textarea:not([rows]) {
     --clr-white: hsl(0, 0%, 100%);
 
     --clr-light-gray: hsl(0, 0%, 81%);
-    --clr-light-grayish blue: hsl(210, 46%, 95%);
+    --clr-light-grayish-blue: hsl(210, 46%, 95%);
 }
 
 body{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background: var(--clr-light-gray);
+}
 
+.daniel, .jonathan, .patrick{
+color: var(--clr-light-grayish-blue);
+}
+.kira, .jeanette{
+color: var(--clr-very-dark-blackish-blue);
+}
+.graduation{
+opacity: 0.5;
+}
+p{
+opacity: 0.7;
+}
+
+.card-container{
+  display: grid;
+  grid-template-areas: 
+  "daniel daniel jonathan kira"
+  "jeanette patrick patrick kira";
+  gap: 20px;
+}
+
+
+.daniel{
+  grid-area: daniel;
+  background: var(--clr-moderate-violet) url(./images/bg-pattern-quotation.svg) no-repeat top right 100px;
+}
+
+.jonathan{
+  grid-area: jonathan;
+  background: var(--clr-very-dark-grayish-blue);
+}
+
+.kira{
+  grid-area: kira;
+  background: var(--clr-white);
+}
+
+.jeanette{
+  grid-area: jeanette;
+  background: var(--clr-white);
+}
+
+.patrick{
+  grid-area: patrick;
+  background: var(--clr-very-dark-blackish-blue);
+}
+
+.card-header{
+  display: grid;
+  grid-template-areas: ;
 }
