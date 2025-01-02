@@ -100,7 +100,7 @@ body{
 color: var(--clr-light-grayish-blue);
 }
 .kira, .jeanette{
-color: var(--clr-light-gray);
+color: var(--clr-very-dark-blackish-blue);
 }
 .graduation{
 opacity: 0.5;
@@ -116,7 +116,7 @@ opacity: 0.7;
   "jeanette patrick patrick kira";
   gap: 20px;
   width: 1100px;
-  max-width: 100%;
+  max-width: 85vw;
   margin: auto;
 
 }
@@ -127,7 +127,7 @@ opacity: 0.7;
   background: var(--clr-moderate-violet) url(./images/bg-pattern-quotation.svg) no-repeat top right 80px;
 }
 .daniel img{
-  border: 1px solid var(--clr-light-grayish-blue);
+  border: 2px solid hsl(263deg 71% 70%);
 }
 
 .jonathan{
@@ -152,11 +152,21 @@ opacity: 0.7;
   grid-area: patrick;
   background: var(--clr-very-dark-blackish-blue);
 }
+.patrick img{
+  border: 2px solid var(--clr-moderate-violet);
+}
 
 .card{
   border-radius: 10px;
   overflow: hidden;
   padding: 25px;
+  box-shadow: 10px 10px 10px 0px #5656562e;
+	transition: translate 1s ease, box-shadow 0.5s ease;
+}
+section:hover {
+	box-shadow: 10px 10px 5px 3px #00000077;
+	translate: -5px;
+  border: 1px solid #00000066;
 }
 
 .card-header{
@@ -174,4 +184,22 @@ opacity: 0.7;
 h1{
   margin: 15px 0;
   font-size: 19px;
+}
+@media (max-width: 940px){
+  .card-container{
+    grid-template-areas: 
+    "daniel daniel jonathan"
+    "jeanette patrick patrick"
+    "kira kira kira";
+  }
+}
+@media (max-width: 550px){
+  .card-container{
+    grid-template-areas: 
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira";
+  }
 }
