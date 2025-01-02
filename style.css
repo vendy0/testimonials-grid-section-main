@@ -117,14 +117,14 @@ opacity: 0.7;
   gap: 20px;
   width: 1100px;
   max-width: 85vw;
-  margin: auto;
+  margin: 40px auto;
 
 }
 
 
 .daniel{
   grid-area: daniel;
-  background: var(--clr-moderate-violet) url(./images/bg-pattern-quotation.svg) no-repeat top right 80px;
+  background: var(--clr-moderate-violet) url(./images/bg-pattern-quotation.svg) no-repeat top right 14%;
 }
 .daniel img{
   border: 2px solid hsl(263deg 71% 70%);
