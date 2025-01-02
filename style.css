@@ -193,7 +193,7 @@ h1{
     "kira kira";
   }
 }
-@media (max-width: 400px){
+@media (max-width: 600px){
   .card-container{
     grid-template-areas: 
     "daniel"
